@@ -33,9 +33,9 @@ import java.util.logging.Logger;
 public class MicroblogsAnnotator {
 
     public static void main(String[] args) throws Exception {
-        
-        String inputPath = "/home/khaled/Desktop/input.txt";
-        String OutputPath = "/home/khaled/Desktop/output.txt";
+        //add relative path here, will do it later
+        String inputPath="";
+        String OutputPath="";
         GateTool g = new GateTool(inputPath,OutputPath);
         g.RunTwitIE();
         //g.RunANNIE();

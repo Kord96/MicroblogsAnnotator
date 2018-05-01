@@ -91,7 +91,7 @@ public class GateTool {
                 if (types[i].equals("Organization") || types[i].equals("Person") || types[i].equals("Location")) {
                     AnnotationSet tmp = tokenSet.get(tokenAnnotation.getStartNode().getOffset(), tokenAnnotation.getEndNode().getOffset());
                     word = getStringFromAnnotationSet(tmp);
-                } else if (types[i].equals("Hashtag")) {
+                } else if (types[i].equals("Hashtag")||types[i].equals("UserID")) {
                     word = (String) tokenAnnotation.getFeatures().get("string");
                     word = word.substring(1);
                 } else {
