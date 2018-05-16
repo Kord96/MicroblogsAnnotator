@@ -200,7 +200,7 @@ public class GateTool {
 
     private String TwitIE() {
         try {
-            String plugins[] = {"ANNIE",
+            String plugins[] = {"ANNIE","Twitter",
                 "Tools", "Stanford_CoreNLP", "Language_Identification"};
 
             //gate.stanford.Tagger
